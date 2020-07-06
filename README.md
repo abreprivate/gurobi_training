@@ -7,6 +7,7 @@ This repository includes slides and Jupyter Notebooks for learning how to build 
 The gurobitraining slides are an introduction to using Gurobi and include example models and exercises 
 to illustrate the process of adding decision variables, building linear expressions, and optimizing for a particular objective function. 
 There are two Jupyter Notebooks for every example model in the slides, one that is a completed key and one with instructions to fill in missing pieces of code.  
+The linear_programming_algebra slides go over the theory behind solving linear programs and sensitivity analysis.
   
 The integer_programming and quadratic slides illustrate more advanced concepts such as integer programming and column-based and quadratic modelling.  
   
