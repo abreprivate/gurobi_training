@@ -36,8 +36,8 @@
 \item {\color{red} Divisibility}
 \item Certainty
 \end{itemize}
-\item Fractional solutions are not always okay.
-\item Binary decision variables greatly enrich our modeling capability.
+\item Fractional solutions are not always suitable
+\item Binary decision variables greatly enrich our modeling capability
 \end{itemize}
 \end{frame}
 
@@ -118,20 +118,9 @@ b_i,\;\;i = 1,\ldots,m \nonumber \\
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Transportation Problem with Fixed Costs}
-Let $f_i$ be the cost of opening a warehouse and $y_i$ indicate whether we open warehouse $i$.
-\begin{eqnarray}
-\min_{x} && \sum_{i \in I} \sum_{j \in J} c_{ij} x_{ij} + {\color{red} \sum_{i \in I} f_i y_i} \nonumber \\
-\mbox{s.t.} && \sum_{i \in I} x_{ij} = d_j,\;\;j \in J \nonumber \\
-&& \sum_{j \in J} x_{ij} \le {\color{red} u_i y_i},\;\;i \in I \nonumber \\
-&& x_{ij} \ge 0, \;\;i \in I,\;j \in J \nonumber \\
-&& {\color{red} y_i \in \{0, 1\},\;\;i \in I} \nonumber
-\end{eqnarray}
-\end{frame}
 
 \begin{frame}
-\frametitle{Transportation Problem: Other Extensions}
+\frametitle{Transportation Problem Extensions}
 \begin{itemize}
 \item No more than 10 warehouses built
 \begin{equation}
@@ -151,7 +140,7 @@ y_1 + y_{13} + y_{101} \le 1 \nonumber
 \end{frame}
 
 \begin{frame}
-\frametitle{Transportation Problem: Other Extensions}
+\frametitle{Transportation Problem Extensions}
 \begin{itemize}
 \item Marginal shipping cost is $c_{ij}$ for $0 \le x_{ij} \le l_{ij}$ and $0.75c_{ij}$ for $x_{ij} > l_{ij}$ \\
 $z_{ij}$ indicates whether we ship at least $l_{ij}$ widgets from $i$ to $j$ \\
@@ -166,6 +155,18 @@ $x_{ij}^1$ and $x_{ij}^2$ are shipping volumes at level 1 and at level 2
 && ... \nonumber
 \end{eqnarray}
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Transportation Problem with Fixed Costs}
+Let $f_i$ be the cost of opening a warehouse and $y_i$ indicate whether we open warehouse $i$.
+\begin{eqnarray}
+\min_{x} && \sum_{i \in I} \sum_{j \in J} c_{ij} x_{ij} + {\color{red} \sum_{i \in I} f_i y_i} \nonumber \\
+\mbox{s.t.} && \sum_{i \in I} x_{ij} = d_j,\;\;j \in J \nonumber \\
+&& \sum_{j \in J} x_{ij} \le {\color{red} u_i y_i},\;\;i \in I \nonumber \\
+&& x_{ij} \ge 0, \;\;i \in I,\;j \in J \nonumber \\
+&& {\color{red} y_i \in \{0, 1\},\;\;i \in I} \nonumber
+\end{eqnarray}
 \end{frame}
 
 {
@@ -200,6 +201,13 @@ Extend the transportation problem to include a fixed costs for opening warehouse
 \item Minimum cost over all active subproblems gives a lower bound.
 \item Terminate when upper and lower bounds are within some tolerance.
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{How are IPs Solved?}
+\begin{center}
+\includegraphics[scale=0.4]{flowchart.png}
+\end{center}
 \end{frame}
 
 \begin{frame}

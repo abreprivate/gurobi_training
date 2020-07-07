@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.29)  1 JUL 2020 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.29)  6 JUL 2020 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1111,13 +1111,13 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [8
 
-] [9
-
 ]
-Overfull \vbox (4.25554pt too high) detected at line 169
+Overfull \vbox (4.25554pt too high) detected at line 158
  []
 
-[10
+[9
+
+] [10
 
 ] [11
 
@@ -1125,53 +1125,59 @@ Overfull \vbox (4.25554pt too high) detected at line 169
 
 ] [13
 
-] [14
+]
+<flowchart.png, id=118, 471.7625pt x 552.0625pt>
+File: flowchart.png Graphic file (type png)
+<use flowchart.png>
+Package pdftex.def Info: flowchart.png  used on input line 211.
+(pdftex.def)             Requested size: 188.70164pt x 220.82108pt.
+ [14
 
-] [15
+ <./flowchart.png>] [15
+
+] [16
 
 ]
-<checkpoints.png, id=130, 722.7pt x 392.1852pt>
+<checkpoints.png, id=138, 722.7pt x 392.1852pt>
 File: checkpoints.png Graphic file (type png)
 <use checkpoints.png>
-Package pdftex.def Info: checkpoints.png  used on input line 247.
+Package pdftex.def Info: checkpoints.png  used on input line 255.
 (pdftex.def)             Requested size: 216.81166pt x 117.65646pt.
- [16
-
- <./checkpoints.png>]
-<ribbon_cutting.png, id=138, 272.217pt x 181.27725pt>
-File: ribbon_cutting.png Graphic file (type png)
-<use ribbon_cutting.png>
-Package pdftex.def Info: ribbon_cutting.png  used on input line 254.
-(pdftex.def)             Requested size: 272.21631pt x 181.27681pt.
  [17
 
- <./ribbon_cutting.png>]
-<detector1.png, id=145, 177.0615pt x 207.77625pt>
-File: detector1.png Graphic file (type png)
-<use detector1.png>
-Package pdftex.def Info: detector1.png  used on input line 262.
-(pdftex.def)             Requested size: 141.64937pt x 166.2212pt.
-<detector2.png, id=146, 177.0615pt x 205.36725pt>
-File: detector2.png Graphic file (type png)
-<use detector2.png>
-Package pdftex.def Info: detector2.png  used on input line 262.
-(pdftex.def)             Requested size: 141.64937pt x 164.29402pt.
+ <./checkpoints.png>]
+<ribbon_cutting.png, id=146, 272.217pt x 181.27725pt>
+File: ribbon_cutting.png Graphic file (type png)
+<use ribbon_cutting.png>
+Package pdftex.def Info: ribbon_cutting.png  used on input line 262.
+(pdftex.def)             Requested size: 272.21631pt x 181.27681pt.
  [18
 
- <./detector1.png> <./detector2.png>] [19
+ <./ribbon_cutting.png>]
+<detector1.png, id=153, 177.0615pt x 207.77625pt>
+File: detector1.png Graphic file (type png)
+<use detector1.png>
+Package pdftex.def Info: detector1.png  used on input line 270.
+(pdftex.def)             Requested size: 141.64937pt x 166.2212pt.
+<detector2.png, id=154, 177.0615pt x 205.36725pt>
+File: detector2.png Graphic file (type png)
+<use detector2.png>
+Package pdftex.def Info: detector2.png  used on input line 270.
+(pdftex.def)             Requested size: 141.64937pt x 164.29402pt.
+ [19
+
+ <./detector1.png> <./detector2.png>]
+[20
 
 ]
-<one_country.jpg, id=160, 692.5875pt x 383.4325pt>
+<one_country.jpg, id=169, 692.5875pt x 383.4325pt>
 File: one_country.jpg Graphic file (type jpg)
 <use one_country.jpg>
-Package pdftex.def Info: one_country.jpg  used on input line 291.
+Package pdftex.def Info: one_country.jpg  used on input line 299.
 (pdftex.def)             Requested size: 207.77785pt x 115.03062pt.
- [20
+ [21
 
- <./one_country.jpg>]
-[21
-
-] [22
+ <./one_country.jpg>] [22
 
 ] [23
 
@@ -1179,13 +1185,13 @@ Package pdftex.def Info: one_country.jpg  used on input line 291.
 
 ] [25
 
+] [26
+
 ]
-Overfull \vbox (0.79347pt too high) detected at line 382
+Overfull \vbox (0.79347pt too high) detected at line 390
  []
 
-[26
-
-] [27
+[27
 
 ] [28
 
@@ -1194,6 +1200,8 @@ Overfull \vbox (0.79347pt too high) detected at line 382
 ] [30
 
 ] [31
+
+] [32
 
 ]
 \tf@nav=\write7
@@ -1205,19 +1213,19 @@ Overfull \vbox (0.79347pt too high) detected at line 382
 \tf@snm=\write9
 \openout9 = `integer_programming.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
  (./integer_programming.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 465.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 465.
 Package rerunfilecheck Info: File `integer_programming.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26600 strings out of 480471
- 582371 string characters out of 5899395
+ 26610 strings out of 480471
+ 582503 string characters out of 5899395
  892886 words of memory out of 5000000
- 41965 multiletter control sequences out of 15000+600000
+ 41972 multiletter control sequences out of 15000+600000
  543086 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,69p,786b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1239,10 +1247,10 @@ exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on integer_programming.pdf (31 pages, 2584158 bytes).
+Output written on integer_programming.pdf (32 pages, 2601954 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 239 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
