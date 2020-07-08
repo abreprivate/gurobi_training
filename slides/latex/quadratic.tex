@@ -18,15 +18,19 @@
 
 \titlegraphic{\includegraphics[scale=0.1]{abremodlogo.png}}
 
-\title{Gurobi Training}
+\title{Column Generation and Quadratic Expressions}
 \author{Abr\'emod}
 
 \begin{document}
 
+\begin{frame}
+\titlepage
+\end{frame}
 
 \begin{frame}
 \frametitle{Column Generation}
 \begin{itemize}
+  \item Coefficient matrix is often sparse (Low proportion of variables have nonzero values)
   \item Give Gurobi a small portion of the variables
     \begin{itemize}
       \item Variables left out of model are effectively fixed to 0
@@ -38,7 +42,6 @@
     \end{itemize}      
     \item More columns than rows
     \begin{itemize}
-      \item Low proportion of variables have nonzero values
       \item Number of potential variables may even be exponential
       \item Ratio of rows to columns should be close to 0
     \end{itemize}
@@ -82,6 +85,9 @@ z^* = \min_x && \sum_{i \in I} c_i x_i  \nonumber \\
 
 \begin{frame}
 \frametitle {Columnwise modeling in Gurobi}
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
 \begin{itemize}
   \item Rowwise Pattern
   \begin{itemize}
@@ -89,6 +95,11 @@ z^* = \min_x && \sum_{i \in I} c_i x_i  \nonumber \\
     \item Create LinExpr list of (coef, Var) pairs
     \item Create constraints (rows) in terms of LinExpr
   \end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth} 
+\begin{itemize}
   \item Columnwise Pattern
   \begin{itemize}
     \item Create constraints (rows)
@@ -96,8 +107,10 @@ z^* = \min_x && \sum_{i \in I} c_i x_i  \nonumber \\
     \item Create variables in terms of Column
   \end{itemize}
 \end{itemize}
-\end{frame}
+\end{column}
 
+\end{columns}
+\end{frame}
 
 \begin{frame}
 \frametitle{Gurobi API for column generation}
@@ -201,11 +214,14 @@ f, $g_i$ are all convex.
 \item Slopes are non-decreasing as we move from left to right.
 \item Not as obvious in multiple dimensions.
 \end{itemize}
-\begin{tabular}{lc}
+\vfill
+\begin{center}
+
+\begin{tabular}{ c c c }
 Convex &
 \begin{tikzpicture}
 \draw (0,0) to [out=-90,in=-90] (2,0);
-\end{tikzpicture} \\
+\end{tikzpicture} 
 Concave &
 \begin{tikzpicture}
 \draw (0,0) to [out=90,in=90] (2,0);
@@ -213,14 +229,14 @@ Concave &
 Both &
 \begin{tikzpicture}
 \draw (0,0) to (2,1);
-\end{tikzpicture} \\
-
+\end{tikzpicture} 
 Neither &
 \begin{tikzpicture}
 \draw (0,0) to [out=0,in=180] (2,1); 
 \end{tikzpicture} \\
 \end{tabular}
 
+\end{center}
 \end{frame}
 
 \begin{frame}
@@ -237,17 +253,19 @@ Neither &
 
 \begin{frame}
 \frametitle{Feasible Region}
+\begin{center}
 \begin{tabular}{ccc}
 Linear & \hspace{1in} & Quadratic \\
 \begin{tikzpicture}
-\draw [fill = blue] (0,0) to (1,1) to (1,2) to (0,1) to (0,0);
+\draw [exerciseblue, fill = exerciseblue] (0,0) to (1,1) to (1,2) to (0,1) to (0,0);
 \end{tikzpicture}  &  &
 \begin{tikzpicture}
-\draw [blue, fill = blue] (0,0) to (1,1) to (1,2) to (0,1)  ;
-\draw [blue, fill = blue] (0,0) [out=0, in = 270] to (1,1);
-\draw [blue, fill = blue] (0,1) [out=75, in = 200] to (1,2);
+\draw [exerciseblue, fill = exerciseblue] (0,0) to (1,1) to (1,2) to (0,1)  ;
+\draw [exerciseblue, fill = exerciseblue] (0,0) [out=0, in = 270] to (1,1);
+\draw [exerciseblue, fill = exerciseblue] (0,1) [out=75, in = 200] to (1,2);
 \end{tikzpicture} \\
 \end{tabular}
+\end{center}
 \end{frame}
 
 
