@@ -51,14 +51,14 @@
 \begin{frame}
 \frametitle{Column Generation Theory}
 \begin{eqnarray}
-z^* = \min_x && \sum_{i \in I} c_i x_i  \nonumber \\
-\mbox{s.t.} && \sum_{i \in I} a_{ij} x_i  = b_j : \pi_j,\;\;j \in J \nonumber \\
-&& x_i \ge 0,\;\;i \in I. \nonumber
+z^* = \min_x && \sum_{j \in J} c_j x_j  \nonumber \\
+\mbox{s.t.} && \sum_{j \in J} a_{ij} x_j  = b_i : \pi_i,\;\;i \in I \nonumber \\
+&& x_j \ge 0,\;\;j \in J. \nonumber
 \end{eqnarray}
 
 \begin{itemize}
-\item The reduced cost of variable $i$ can be computed as: $c_i - \sum_{j} a_{ij} \pi_j$
-\item If $c_i - \sum_{j} a_{ij} \pi_j \ge 0$ for all $i \in I$, we have a proof of optimality.
+\item The reduced cost of variable $j$ can be computed as: $c_j - \sum_{i} a_{ij} \pi_i$
+\item If $c_j - \sum_{i} a_{ij} \pi_i \ge 0$ for all $j \in J$, we have a proof of optimality.
 \item Can compute the reduced cost even for variables not yet added to the model.
 \end{itemize}
 \end{frame}
@@ -103,7 +103,7 @@ z^* = \min_x && \sum_{i \in I} c_i x_i  \nonumber \\
   \item Columnwise Pattern
   \begin{itemize}
     \item Create constraints (rows)
-    \item Create Column list of (coef, GRBConstr) pairs
+    \item Create Column list of (coef, Constr) pairs
     \item Create variables in terms of Column
   \end{itemize}
 \end{itemize}
